@@ -1,23 +1,33 @@
 <script setup>
 // import { RouterLink, RouterView } from 'vue-router'
 import HeaderVue from './components/HeaderVue.vue'
-import MainVue from './components/MainVue.vue'
+import SectionSlide from './components/MainVue.vue'
+import SectionShopping from './components/SectionShopping.vue'
+import SectionShopping2 from './components/SectionShopping2.vue'
+import SectionVideo from './components/SectionVideo.vue'
+import Gdgtjuty from './components/SectionFooter.vue'
 </script>
 
 <template>
   <header>
-    <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
     <HeaderVue />
-
   </header>
-  <section class="section">
+  <section class="section-slide">
     <h1>Novidades:</h1>
-    <MainVue />
+    <SectionSlide />
   </section>
-  <section class="section">
+  <section class="section-shopping">
+    <SectionShopping />
   </section>
-
-      
+  <section class="section-shopping">
+    <SectionShopping2 />
+  </section>
+  <section class="section-shopping">
+    <SectionVideo />
+  </section>
+  <section class="section-footer">
+    <Gdgtjuty />
+  </section>
 
   </template>
   <!-- <RouterView /> -->
@@ -30,84 +40,53 @@ import MainVue from './components/MainVue.vue'
     border-radius: 10px;
     display: flex;
     align-items: center;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Cinzel', cursive;
     font-weight: 400;
     margin: 10px auto 0;
     /* justify-content: center; */
 }
 
-.section {
+.section-slide {
     display: flex;
     align-items: center;
     margin: 0px auto 0;
     background-color:#FFECD2;
     width: 80vw;
-    height: 500px;
+    height: 650px;
     font-family: 'Cinzel', serif;
     flex-direction: column;
+    border: solid 1px #4F2D00;
+    gap: 30px;
 }
 
-.section h1 {
+.section-slide h1 {
   margin-top: 10px;
   color:#4F2D00;
   font-size: xx-large;
   text-decoration: underline;
 }
-/*  
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+
+.section-shopping {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  height: 700px;
+  background-color:#FFECD2;
+  margin: 0px auto 0;
+  gap: 500px;
+  border: solid 1px #4F2D00;
+
 }
 
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
+.section-footer { 
+    width: 80vw;
+    height: auto;
+    background-color: #CB954F;
     display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-  
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-  
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-  
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-    
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-} */
+    align-items: center;
+    font-family: 'Cinzel', cursive;
+    font-weight: 400;
+    margin: 0px auto 0;
+}
 </style>
