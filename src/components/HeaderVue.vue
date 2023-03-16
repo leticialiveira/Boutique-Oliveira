@@ -5,7 +5,7 @@
 <template>
   <div class="div-header">
 
-    <img src="../assets/icons/Boutique Oliveira.jpg" alt="">
+    <img src="../assets/icons/Boutique-Oliveira.jpg" alt="">
     <div class="div-header-a">
       <a href="#Novidades"> Novidades</a>
       <a href="#Produtos"> Produtos</a>
