@@ -7,7 +7,7 @@
     <ul><li>Composição material: Fibra sintética</li> <li> Tamanhos: P, M, G</li><li>Tecido: Algodão</li><li>Estilo: Casual</li><li>Origem: CN (origem)</li><li>Estampa: Rosas Vermelhas</li>
     </ul>
     <div class="description-values">
-        <button>Comprar</button>
+        <button >Comprar</button>
         <span>R$130,00</span>
 
     </div>

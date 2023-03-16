@@ -5,7 +5,8 @@ import SectionSlide from './components/MainVue.vue'
 import SectionShopping from './components/SectionShopping.vue'
 import SectionShopping2 from './components/SectionShopping2.vue'
 import SectionVideo from './components/SectionVideo.vue'
-import Gdgtjuty from './components/SectionFooter.vue'
+import SectionVideo2 from './components/SectionVideo2.vue'
+import SectionFooter from './components/SectionFooter.vue'
 </script>
 
 <template>
@@ -25,8 +26,11 @@ import Gdgtjuty from './components/SectionFooter.vue'
   <section class="section-shopping">
     <SectionVideo />
   </section>
+  <section class="section-shopping">
+    <SectionVideo2 />
+  </section>
   <section class="section-footer">
-    <Gdgtjuty />
+    <SectionFooter />
   </section>
 
   </template>
@@ -37,7 +41,7 @@ import Gdgtjuty from './components/SectionFooter.vue'
     width: 80vw;
     height: 120px;
     background-color: #CB954F;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     display: flex;
     align-items: center;
     font-family: 'Cinzel', cursive;
@@ -55,15 +59,15 @@ import Gdgtjuty from './components/SectionFooter.vue'
     height: 650px;
     font-family: 'Cinzel', serif;
     flex-direction: column;
-    border: solid 1px #4F2D00;
     gap: 30px;
+    /* border-radius: 8px; */
+
 }
 
 .section-slide h1 {
   margin-top: 10px;
   color:#4F2D00;
   font-size: xx-large;
-  text-decoration: underline;
 }
 
 .section-shopping {
@@ -75,7 +79,7 @@ import Gdgtjuty from './components/SectionFooter.vue'
   background-color:#FFECD2;
   margin: 0px auto 0;
   gap: 500px;
-  border: solid 1px #4F2D00;
+  border-top: solid 1px #4F2D00;
 
 }
 
@@ -84,9 +88,11 @@ import Gdgtjuty from './components/SectionFooter.vue'
     height: auto;
     background-color: #CB954F;
     display: flex;
+    /* border-radius: 10px; */
     align-items: center;
     font-family: 'Cinzel', cursive;
     font-weight: 400;
     margin: 0px auto 0;
+    padding: 10px;
 }
 </style>
